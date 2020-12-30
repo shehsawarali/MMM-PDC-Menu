@@ -42,7 +42,7 @@ Module.register("MMM-PDC-Menu", {
 						append = false;
 					var htmlitem = document.createElement("p");
 					htmlitem.innerHTML = item;
-					htmlitem.className = "myContentData";
+					htmlitem.className = "myMenuData";
 					menuByTime.appendChild(htmlitem);
 				}
 				
