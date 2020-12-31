@@ -66,8 +66,9 @@ module.exports = NodeHelper.create({
 						menu[timing[i]] = temp;
 					}
 				}
-			
-				console.log(menu); 
+				
+				this.sendSocketNotification('PdcMenu', menu);
+				console.log(menu);
 		});
 	},
 })

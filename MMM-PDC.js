@@ -38,6 +38,7 @@ Module.register("MMM-PDC", {
 		}
 		
 		if(notification == "PdcMenu"){
+			this.menu = payload;
 			console.log(payload);
 		}
 	},
