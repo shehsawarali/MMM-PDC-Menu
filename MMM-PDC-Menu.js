@@ -1,4 +1,4 @@
-Module.register("MMM-PDC", {
+Module.register("MMM-PDC-Menu", {
 	
 	menu: ["Today's menu has not been updated."],
 	
