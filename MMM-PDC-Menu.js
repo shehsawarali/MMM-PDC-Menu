@@ -11,13 +11,21 @@ Module.register("MMM-PDC-Menu", {
 	},
 	
 	getDom: function() {
-		var element = document.createElement("div");
-		element.className = "myContent";
-		element.innerHTML = "Hello from PDC!";
-		var subElement = document.createElement("p");
-		subElement.id = "COUNT";
-		element.appendChild(subElement);
-		return element;
+		var list = document.createElement("div");
+		list.className = "myContent";
+		var title =  document.createElement("p");
+		title.innerHTML = "PDC Menu";
+		title.className = "myContentTitle";
+		list.appendChild(title);
+		list.appendChild(document.createElement('br'));
+		
+		for (const item of this.news){
+			var htmlitem = document.createElement("p");
+			htmlitem.innerHTML = item;
+			htmlitem.className = "myContentData";
+			list.appendChild(htmlitem);
+		}
+		return list;
 	},
 	
 	notificationReceived: function(notification, payload, sender) {
